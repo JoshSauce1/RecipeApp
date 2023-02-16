@@ -1,3 +1,11 @@
+
+.recipeTile{
+    background-color: white;
+    border-radius: 35px;
+    margin: 10px;
+    height: 450px;
+    
+}
 .recipe_image{
     height: 200px;
     width: 200px;
@@ -8,13 +16,18 @@
     border-radius: 35px;
     transition: 1s;
 }
-.recipe_image:hover{
+/* .recipe_image:hover{
     width: 210px;
     transform: scale(1.1);
+} */
+.recipe_ingredients{
+    max-width: 200px
 }
 
 .recipe_label{
-    max-width: 200px;
+    max-width: 300px;
     text-align: center;
     margin: 12px 0px;
+    padding-left: 70px;
+    font-size: 25px;
 }

@@ -1,13 +1,29 @@
 
-
+html {background-image: linear-gradient(to right, #9ca1a8, #9ca9b7, #9ab2c6, #95bcd5, #8ec6e2);}
 .app{
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items:center;
     padding: 40px 24px;
-    background: radial-gradient(#fff,grey);
     
+}
+
+.app_header{
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+.app_header h1{
+    padding-bottom: 10px;
+    font-size: 50px;
+}
+
+.app_header p{
+    font-size: 20px;
 }
 
 .app__searchForm{
@@ -21,13 +37,19 @@
     font-size: 15px;
 }
 .app__submit{ 
-    padding: 6px 16px;
+    padding: 5.5px 16px;
     font-size: 15px;
     margin-left: 6px;
     background-color: blue;
     border: 2px solid black;
+    border-radius: 4px;
     color: white;
     cursor: pointer;
+}
+
+.app_note{
+    padding-top: 10px;
+    color: grey;
 }
 
 .app__submit:hover{ 
@@ -41,16 +63,16 @@
 }
 
 .app_Recipes{
-    margin-left: 25px;
+    /* margin-left: */
     margin-top: 24px;
     display: grid;
-    grid-template-columns: 230px 230px;
-    align-items: baseline;
+    grid-template-columns: 450px 450px;
+
 
 }
 
 .app_healthLabels{
-    padding: 7px 8px;
+    padding: 7.5px 8px;
     margin-left: 6px;
     border-radius: 4px;
 }
