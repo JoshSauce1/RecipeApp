@@ -33,7 +33,7 @@ function App() {
     <div className="app">
       <div className = "app_header">
       <h1>Culinary Craze</h1>
-      <p> Powered by the Edemam Recipe Search API, enter any food ingriedient to see how it works!</p>
+      <p> Powered by the Edemam Recipe Search API, enter any food ingredient to see how it works!</p>
       </div>
       <form className="app__searchForm" onSubmit={onSubmit}>
         <input 

@@ -1,5 +1,8 @@
 
-html {background-image: linear-gradient(to right, #9ca1a8, #9ca9b7, #9ab2c6, #95bcd5, #8ec6e2);}
+html {background-color: #8BC6EC;
+    background-image: linear-gradient(90deg, #8BC6EC 0%, #9599E2 100%);
+    }
+
 .app{
     display: flex;
     flex-direction: column;
