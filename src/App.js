@@ -8,14 +8,14 @@ import { useEffect, useState } from "react";
 function App() {
   const [query, setquery] = useState("");
   const [recipes, setrecipes] = useState([])
-  const [healthLabel, sethealthLabel] = useState(["vegan"])
+  const [healthLabel, sethealthLabel] = useState(["None"])
 
 
 
   const app_key = "2f4a33fce4f4959bc8cd6c7777b0ca7a";
   const app_id = "da130918";
 
-  var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${app_id}&app_key=${app_key}&${healthLabel}`;
+  var url = `https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=${app_id}&app_key=${app_key}&health=${healthLabel}`;
 
 
   async function  getRecipes(){
@@ -50,6 +50,7 @@ function App() {
         <select className="app_healthLabels">
           <option onClick={()=> sethealthLabel("vegan")}>Vegan</option>
           <option onClick={()=> sethealthLabel("vegetarian")}>Vegatarian</option> 
+          <option onClick={()=> sethealthLabel("vegetarian")}>Vegatarian</option> 
         
           </select>
       </form>
@@ -59,7 +60,9 @@ function App() {
         {recipes.map((recipe) => {
           return <RecipeTile recipe={recipe}/>;
         })}
+        
       </div>
+
 
     </div>
   );
