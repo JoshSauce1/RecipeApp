@@ -7,6 +7,7 @@ export  default function RecipeTile({recipe}) {
 
   return (
         <div className="recipeTile ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <p className="recipe_label">{recipe["recipe"]["label"]}</p>
         <p className="recipe_cals">Calories: {Math.round(recipe["recipe"]["calories"])}</p>  {/*Rounds to the nearest integer*/}
         <a href={recipe["recipe"]["url"]}> <img className="recipe_image" src={recipe["recipe"]["image"]}></img> </a>

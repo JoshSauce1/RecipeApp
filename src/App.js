@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [query, setquery] = useState("");
   const [recipes, setrecipes] = useState([])
-  const [healthLabel, sethealthLabel] = useState(["None"])
+  const [healthLabel, sethealthLabel] = useState(["vegan"])
 
 
 
@@ -31,6 +31,7 @@ function App() {
 
   return (
     <div className="app">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       <div className = "app_header">
       <h1>Culinary Craze</h1>
       <p> Powered by the Edemam Recipe Search API, enter any food ingredient or recipe to see how it works! 
@@ -49,7 +50,6 @@ function App() {
 
         <select className="app_healthLabels">
           <option onClick={()=> sethealthLabel("vegan")}>Vegan</option>
-          <option onClick={()=> sethealthLabel("vegetarian")}>Vegatarian</option> 
           <option onClick={()=> sethealthLabel("vegetarian")}>Vegatarian</option> 
         
           </select>

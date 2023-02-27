@@ -82,4 +82,39 @@ html {background-color: #8BC6EC;
 }
 
 
+/* Tablet view */
 
+@media screen and (max-width: 910px) {
+    .app_Recipes{
+        display: grid;
+        grid-template-columns: 350px 350px;
+    }
+  }
+
+
+  /* Phone view */
+
+@media screen and (max-width: 700px) {
+    .app_Recipes{
+        display: grid;
+        grid-template-columns: 500px;
+    }
+  }
+
+  @media screen and (max-width: 510px) {
+    .app_Recipes{
+        display: grid;
+        grid-template-columns: 350px;
+    }
+    .app__input{
+        padding: 6px 0px;
+        min-width: 0px;
+        max-width: 40vw;
+    }
+    .app__submit{
+        padding: 6px 2px;
+    }
+    .app_healthLabels{
+        padding: 7.5px 1px;
+    }
+  }
