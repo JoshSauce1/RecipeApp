@@ -99,6 +99,9 @@ html {background-color: #8BC6EC;
         display: grid;
         grid-template-columns: 500px;
     }
+    .app_note{
+        text-align: center;
+    }
   }
 
   @media screen and (max-width: 510px) {
@@ -117,4 +120,5 @@ html {background-color: #8BC6EC;
     .app_healthLabels{
         padding: 7.5px 1px;
     }
+
   }
